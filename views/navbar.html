@@ -1,0 +1,13 @@
+<h3 class="text h5 font-weight-bold text-truncate">
+  <img src="/assets/icons/icon.png" alt="{{manifest.name}}" class="ui image mini spaced mini mr-4"/>
+  {{manifest.name}}
+  <span class="text-muted text-small" style="font-size: 12px;">{{manifest.version}}</span>
+  
+  <span class="float-right mr-4">
+    
+    <button ng-if="!local._auth.hasValidKey" ng-disabled="local.status" class="ui button blue basic" ng-click="local.showLoginModal=!local.showLoginModal; saveLocal()"> <i class="ui icon unlock"></i> Activate License</button>
+    <!-- <button ng-if="local._auth.hasValidKey" ng-disabled="local.status" class="ui button basic" ng-click="logout()"> <i class="ui icon lock"></i> Logout</button> -->
+    
+  </span>
+  
+</h3>
